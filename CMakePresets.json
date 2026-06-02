@@ -1,0 +1,53 @@
+{
+    "version": 4,
+
+   "cmakeMinimumRequired": {
+    "major": 4,
+    "minor": 0,
+    "patch": 1
+  },
+
+  "configurePresets": [
+    {
+      "name": "debug-clang",
+      "displayName": "Debug build with Clang and Ninja",
+      "description": "Debug configuration using Clang and Ninja generator",
+      "generator": "Ninja",       
+      "binaryDir": "${sourceDir}/build/Debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug", 
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON", 
+        "CMAKE_CXX_COMPILER": "C:/Program Files/LLVM/bin/clang++.exe", 
+        "CMAKE_CXX_CLANG_TIDY": "C:/Program Files/LLVM/bin/clang-tidy.exe;-checks=bugprone-*,modernize-*,performance-*"
+      }
+    },
+    {
+      "name": "release-clang",
+      "displayName": "Release build with Clang and Ninja",
+      "description": "Release configuration using Clang and Ninja generator",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/Release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_CXX_COMPILER": "C:/Program Files/LLVM/bin/clang++.exe"
+      }
+    }
+  ],
+
+  "buildPresets": [
+    {
+      "name": "build-debug-clang",
+      "configurePreset": "debug-clang", 
+      "description": "Build using Ninja",
+      "jobs": 8 
+    },
+    {
+      "name": "build-release-clang",
+      "configurePreset": "release-clang",
+      "description": "Build release with Ninja",
+      "jobs": 8
+    }
+  ]
+}
+
