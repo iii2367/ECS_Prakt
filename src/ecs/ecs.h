@@ -25,5 +25,13 @@ struct World
     uint32_t entitiesCount = 0;
 };
 
+class ECS_Core
+{
+public:
+    void createEntity(World* world, uint32_t id, std::string name, uint32_t componentsCapacity);
+    void componentAttachment(Entity* entity, Component* component);
+    void cascadingDeletion(World* world, uint32_t id);
+};
+
 #endif
 
