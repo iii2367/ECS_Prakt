@@ -12,18 +12,8 @@ set(CMAKE_COMPILE_COMMANDS_JSON ON)
 add_executable(ECS_exe
     src/main.cpp 
     src/ecs/ecs_core.cpp
+    src/ecs/systems/system_movement/system_movement.cpp
 )
-
-#if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-#    message(STATUS "Debug build")
-#    add_compile_definitions(DEBUG_BUILD)
-#    target_compile_options(ECS_exe PRIVATE -Wall -O0 -g)
-#elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
-#    message(STATUS "Release build")
-#    add_compile_definitions(RELEASE_BUILD)
-#    target_compile_options(ECS_exe PRIVATE -Wall -O2)
-#endif()
-
 
 add_definitions(-DUNICODE -D_UNICODE)
 

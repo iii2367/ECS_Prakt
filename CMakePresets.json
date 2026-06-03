@@ -17,7 +17,7 @@
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug", 
         "CMAKE_EXPORT_COMPILE_COMMANDS": "ON", 
-        "CMAKE_CXX_COMPILER": "C:/Program Files/LLVM/bin/clang++.exe", 
+        "CMAKE_CXX_COMPILER": "clang++", 
         "CMAKE_CXX_CLANG_TIDY": "C:/Program Files/LLVM/bin/clang-tidy.exe;-checks=bugprone-*,modernize-*,performance-*"
       }
     },
@@ -30,7 +30,7 @@
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release",
         "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
-        "CMAKE_CXX_COMPILER": "C:/Program Files/LLVM/bin/clang++.exe"
+        "CMAKE_CXX_COMPILER": "clang++"
       }
     }
   ],
