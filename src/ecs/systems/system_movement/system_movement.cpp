@@ -64,7 +64,7 @@ void SystemMovement::update(std::vector<Entity*> entities, Plane plane, Rect_M r
                 else if (plane == Plane::Vec3)
                 {
                     Vec3* pos = reinterpret_cast<Vec3*>(comp->buffer);
-                    Vec3* move = reinterpret_cast<Vec3*>(comp->buffer + sizeof(Vec2));
+                    Vec3* move = reinterpret_cast<Vec3*>(comp->buffer + sizeof(Vec3));
                     Vec3 npos = *pos + *move; 
                     *move = *move * 0;
 
@@ -76,7 +76,7 @@ void SystemMovement::update(std::vector<Entity*> entities, Plane plane, Rect_M r
                 else if (plane == Plane::Vec4)
                 {
                     Vec4* pos = reinterpret_cast<Vec4*>(comp->buffer);
-                    Vec4* move = reinterpret_cast<Vec4*>(comp->buffer + sizeof(Vec2));
+                    Vec4* move = reinterpret_cast<Vec4*>(comp->buffer + sizeof(Vec4));
                     Vec4 npos = *pos + *move; 
                     *move = *move * 0;
 
