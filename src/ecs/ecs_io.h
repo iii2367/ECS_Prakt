@@ -2,19 +2,16 @@
 #define ECS_IO_H
 
 #include "ecs.h"
-#include <string>
+#include "systems/system_manager.h"
 #include "systems/system_movement/system_movement.h"
-#include "systems/system_combat/system_combat.h"
+#include <string>
 
 class ECS_IO
 {
 public:
-    void load(World* world, const std::string& filename, ECS_Core* ecs_core);
-    void save(const World* world, const std::string& filename);
+    void load(World* world, const std::string& filename, ECS_Core* ecs_core, SystemManager* systemManager, Plane plane);
+    void save(const World* world, const std::string& filename, Plane plane);
     void unload(World* world, std::string& filename);
-
-    SystemMovement systemMovement;
-    SystemCombat systemCombat;
 };
 
 #endif
