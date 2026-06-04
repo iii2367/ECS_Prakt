@@ -16,6 +16,8 @@ void ECS_IO::load(World* world, const std::string& filename, ECS_Core* ecs_core,
     nlojson json;
     file >> json;
 
+    if (!file.is_open()) { return; }
+
      for (auto& e : json["entities"])
     {
         uint32_t id = e["id"];
