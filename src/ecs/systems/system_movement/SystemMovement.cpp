@@ -46,7 +46,11 @@ void SystemMovement::update(World* world, Rect_M rect_m)
                 if (npos.x > rect_m.xmax || npos.x < rect_m.xmin ||
                     npos.y > rect_m.ymax || npos.y < rect_m.ymin ||
                     npos.z > rect_m.zmax || npos.z < rect_m.zmin ||
-                    npos.w > rect_m.wmax || npos.w < rect_m.wmin) { continue; }
+                    npos.w > rect_m.wmax || npos.w < rect_m.wmin) 
+                {
+                    std::clog << "[MOVEMENT] Entity " << entity->name << " tried to move out of bounds to pos=(" << npos.x << "," << npos.y << "," << npos.z << "," << npos.w << ")" << std::endl;
+                    continue;
+                }
                 else { *pos = npos; std::clog << "[MOVEMENT] Entity " << entity->name << " new pos=(" << pos->x << "," << pos->y << "," << pos->z << "," << pos->w << ")" << std::endl; }
             }
         }

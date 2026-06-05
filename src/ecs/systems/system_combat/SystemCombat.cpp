@@ -31,6 +31,7 @@ void SystemCombat::addHealth(Entity* entity, int32_t health)
 
 void SystemCombat::update(World* world, ECSCore* ecsCore)
 {
+    std::vector<uint32_t> toDelete;
     for (auto entity : world->entities)
     {
         for (auto comp : entity->components)
@@ -45,9 +46,13 @@ void SystemCombat::update(World* world, ECSCore* ecsCore)
                 
                 std::clog << "[COMBAT] Entity " << entity->name << " life=" << *life << " after update" << std::endl;
 
-                if (*life <= 0) { ecsCore->cascadingDeletion(world, entity->id); }
+                if (*life <= 0) { toDelete.push_back(entity->id); }
             }
         }
+    }
+    for (auto id : toDelete)
+    {
+        ecsCore->cascadingDeletion(world, id);
     }
 }
 
