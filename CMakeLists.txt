@@ -11,10 +11,11 @@ set(CMAKE_COMPILE_COMMANDS_JSON ON)
 
 add_executable(ECS_exe
     src/main.cpp 
-    src/ecs/ecs_core.cpp
-    src/ecs/systems/system_movement/system_movement.cpp
-    src/ecs/systems/system_combat/system_combat.cpp
-    src/ecs/ecs_io.cpp
+    src/ecs/core/ECSCore.cpp
+    src/ecs/systems/SystemManager.cpp
+    src/ecs/systems/system_movement/SystemMovement.cpp
+    src/ecs/systems/system_combat/SystemCombat.cpp
+    src/ecs/io/ECSIO.cpp
 )
 
 target_include_directories(ECS_exe PRIVATE

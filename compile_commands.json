@@ -28,5 +28,65 @@
   "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\ECS_exe.dir\\src\\ecs\\ecs_io.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_io.cpp",
   "file": "F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_io.cpp",
   "output": "CMakeFiles\\ECS_exe.dir\\src\\ecs\\ecs_io.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\SAVE_exe.dir\\src\\tests\\save_load\\save.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\tests\\save_load\\save.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\tests\\save_load\\save.cpp",
+  "output": "CMakeFiles\\SAVE_exe.dir\\src\\tests\\save_load\\save.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\SAVE_exe.dir\\src\\ecs\\ecs_core.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_core.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_core.cpp",
+  "output": "CMakeFiles\\SAVE_exe.dir\\src\\ecs\\ecs_core.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\SAVE_exe.dir\\src\\ecs\\systems\\system_movement\\system_movement.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\ecs\\systems\\system_movement\\system_movement.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\ecs\\systems\\system_movement\\system_movement.cpp",
+  "output": "CMakeFiles\\SAVE_exe.dir\\src\\ecs\\systems\\system_movement\\system_movement.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\SAVE_exe.dir\\src\\ecs\\systems\\system_combat\\system_combat.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\ecs\\systems\\system_combat\\system_combat.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\ecs\\systems\\system_combat\\system_combat.cpp",
+  "output": "CMakeFiles\\SAVE_exe.dir\\src\\ecs\\systems\\system_combat\\system_combat.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\SAVE_exe.dir\\src\\ecs\\ecs_io.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_io.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_io.cpp",
+  "output": "CMakeFiles\\SAVE_exe.dir\\src\\ecs\\ecs_io.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\LOAD_exe.dir\\src\\tests\\save_load\\load.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\tests\\save_load\\load.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\tests\\save_load\\load.cpp",
+  "output": "CMakeFiles\\LOAD_exe.dir\\src\\tests\\save_load\\load.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\LOAD_exe.dir\\src\\ecs\\ecs_core.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_core.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_core.cpp",
+  "output": "CMakeFiles\\LOAD_exe.dir\\src\\ecs\\ecs_core.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\LOAD_exe.dir\\src\\ecs\\systems\\system_movement\\system_movement.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\ecs\\systems\\system_movement\\system_movement.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\ecs\\systems\\system_movement\\system_movement.cpp",
+  "output": "CMakeFiles\\LOAD_exe.dir\\src\\ecs\\systems\\system_movement\\system_movement.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\LOAD_exe.dir\\src\\ecs\\systems\\system_combat\\system_combat.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\ecs\\systems\\system_combat\\system_combat.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\ecs\\systems\\system_combat\\system_combat.cpp",
+  "output": "CMakeFiles\\LOAD_exe.dir\\src\\ecs\\systems\\system_combat\\system_combat.cpp.obj"
+},
+{
+  "directory": "F:/source/IiiI_ind_proj/build/Debug",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DUNICODE -D_UNICODE -IF:/source/IiiI_ind_proj/libs/nlohmann/single_include/nlohmann -O0 -std=c++17 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\LOAD_exe.dir\\src\\ecs\\ecs_io.cpp.obj -c F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_io.cpp",
+  "file": "F:\\source\\IiiI_ind_proj\\src\\ecs\\ecs_io.cpp",
+  "output": "CMakeFiles\\LOAD_exe.dir\\src\\ecs\\ecs_io.cpp.obj"
 }
 ]

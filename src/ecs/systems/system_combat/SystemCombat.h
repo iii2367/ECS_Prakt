@@ -1,13 +1,14 @@
 #ifndef SYSTEM_COMBAT_H
 #define SYSTEM_COMBAT_H
 
-#include "../../ecs.h"
+#include "../../core/ECSCore.h"
 
 class SystemCombat
 {
 public:
     Component* addComponent(int32_t basicLifePoint);
-    void update(World* world, ECS_Core* ecs_core);
+    void addHealth(Entity* entity, int32_t health);
+    void update(World* world, ECSCore* ecsCore);
 };
 
 #endif
