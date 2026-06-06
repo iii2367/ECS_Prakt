@@ -42,16 +42,20 @@ void SystemMovement::update(World* world, Rect_M rect_m)
                 Vec4 npos = *pos + *move; 
                 *move = {0.0, 0.0, 0.0, 0.0};
 
+                bool clamped = false;
+                if (npos.x > rect_m.xmax) { npos.x = rect_m.xmax; clamped = true; }
+                if (npos.x < rect_m.xmin) { npos.x = rect_m.xmin; clamped = true; }
+                if (npos.y > rect_m.ymax) { npos.y = rect_m.ymax; clamped = true; }
+                if (npos.y < rect_m.ymin) { npos.y = rect_m.ymin; clamped = true; }
+                if (npos.z > rect_m.zmax) { npos.z = rect_m.zmax; clamped = true; }
+                if (npos.z < rect_m.zmin) { npos.z = rect_m.zmin; clamped = true; }
+                if (npos.w > rect_m.wmax) { npos.w = rect_m.wmax; clamped = true; }
+                if (npos.w < rect_m.wmin) { npos.w = rect_m.wmin; clamped = true; }
 
-                if (npos.x > rect_m.xmax || npos.x < rect_m.xmin ||
-                    npos.y > rect_m.ymax || npos.y < rect_m.ymin ||
-                    npos.z > rect_m.zmax || npos.z < rect_m.zmin ||
-                    npos.w > rect_m.wmax || npos.w < rect_m.wmin) 
-                {
-                    std::clog << "[MOVEMENT] Entity " << entity->name << " tried to move out of bounds to pos=(" << npos.x << "," << npos.y << "," << npos.z << "," << npos.w << ")" << std::endl;
-                    continue;
-                }
-                else { *pos = npos; std::clog << "[MOVEMENT] Entity " << entity->name << " new pos=(" << pos->x << "," << pos->y << "," << pos->z << "," << pos->w << ")" << std::endl; }
+                *pos = npos;
+
+                if (clamped) { std::clog << "[MOVEMENT] Entity " << entity->name << " tried to move out of bounds, clamped to pos=(" << pos->x << "," << pos->y << "," << pos->z << "," << pos->w << ")" << std::endl; }
+                else { std::clog << "[MOVEMENT] Entity " << entity->name << " new pos=(" << pos->x << "," << pos->y << "," << pos->z << "," << pos->w << ")" << std::endl; }
             }
         }
     }

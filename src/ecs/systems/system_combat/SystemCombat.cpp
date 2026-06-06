@@ -26,7 +26,8 @@ void SystemCombat::addHealth(Entity* entity, int32_t health)
             *addHealth = health;
         }
     }
-    std::clog << "[COMBAT] Entity " << entity->name << " received +" << health << " health" << std::endl;
+    std::clog << "[COMBAT] Entity " << entity->name << " received " << (health > 0 ? "+" + std::to_string(health) : std::to_string(health)) << " health" << std::endl;
+
 }
 
 void SystemCombat::update(World* world, ECSCore* ecsCore)

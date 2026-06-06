@@ -40,6 +40,10 @@ int main()
     sysManager->getSystemMovement()->update(world.get(), border);
     sysManager->getSystemCombat()->update(world.get(), ecsCore.get());
 
+    // Add demage
+    sysManager->getSystemCombat()->addHealth(world->entities[0], -34);
+    sysManager->getSystemMovement()->addMovement(world->entities[0], { 4.0, 4.0, 0.0, 0.0 });
+
     // Used ECSIO save
     ecsio->save(world.get(), "save.json");
 
